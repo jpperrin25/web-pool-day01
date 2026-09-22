@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-
-sed -i 's/myMoule/myModule/g' *.js
+find . -type f -name "*.js" -exec sed -i 's/myMoule/myModule/g' {} \;
